@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">Мурал «Старый город»</title>
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f3e2c4"/>
+    <stop offset=".65" stop-color="#efd3a8"/>
+    <stop offset="1" stop-color="#e7bd8c"/>
+  </linearGradient>
+  <linearGradient id="brick" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#b4573d"/>
+    <stop offset="1" stop-color="#8f3e2c"/>
+  </linearGradient>
+  <linearGradient id="ochre" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#dfae64"/>
+    <stop offset="1" stop-color="#c38f4b"/>
+  </linearGradient>
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <radialGradient id="vig" cx=".5" cy=".45" r=".8">
+    <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".45"/>
+  </radialGradient>
+</defs>
+<rect width="800" height="1000" fill="url(#sky)"/>
+<circle cx="620" cy="250" r="110" fill="#f9f0d8" opacity=".85"/>
+<g fill="#e4c493" opacity=".7">
+  <path d="M0 430h110v-70h120v80h90v-50h120v60h80v-90h130v100h150v40H0Z"/>
+</g>
+<g>
+  <rect x="70" y="360" width="210" height="380" fill="url(#brick)"/>
+  <rect x="70" y="340" width="210" height="26" fill="#6f2f22"/>
+  <path d="M60 340L175 280l115 60Z" fill="#7d3526"/>
+  <g fill="#f3e2c4" opacity=".9">
+    <rect x="100" y="392" width="38" height="54"/><rect x="162" y="392" width="38" height="54"/><rect x="224" y="392" width="34" height="54"/>
+    <rect x="100" y="486" width="38" height="54"/><rect x="162" y="486" width="38" height="54"/><rect x="224" y="486" width="34" height="54"/>
+    <rect x="100" y="580" width="38" height="54"/><rect x="224" y="580" width="34" height="54"/>
+  </g>
+  <rect x="148" y="646" width="56" height="94" fill="#4a2018"/>
+  <rect x="70" y="728" width="210" height="12" fill="#6f2f22"/>
+  <g stroke="#7c3223" stroke-width="2" opacity=".4">
+    <path d="M70 440h210M70 530h210M70 620h210"/>
+  </g>
+</g>
+<g>
+  <rect x="290" y="300" width="240" height="440" fill="url(#ochre)"/>
+  <rect x="290" y="282" width="240" height="24" fill="#8f5f2b"/>
+  <rect x="304" y="304" width="212" height="12" fill="#f0d9ae"/>
+  <g fill="#6f4a24">
+    <rect x="318" y="340" width="34" height="48"/><rect x="372" y="340" width="34" height="48"/><rect x="426" y="340" width="34" height="48"/><rect x="480" y="340" width="30" height="48"/>
+    <rect x="318" y="430" width="34" height="48"/><rect x="372" y="430" width="34" height="48"/><rect x="426" y="430" width="34" height="48"/><rect x="480" y="430" width="30" height="48"/>
+    <rect x="318" y="520" width="34" height="48"/><rect x="372" y="520" width="34" height="48"/><rect x="426" y="520" width="34" height="48"/><rect x="480" y="520" width="30" height="48"/>
+    <rect x="318" y="610" width="34" height="48"/><rect x="480" y="610" width="30" height="48"/>
+  </g>
+  <rect x="372" y="660" width="76" height="80" fill="#5c3c1c"/>
+  <path d="M372 660h76" stroke="#f0d9ae" stroke-width="8"/>
+  <g fill="#f0d9ae" opacity=".8">
+    <rect x="304" y="680" width="212" height="8"/>
+  </g>
+</g>
+<g>
+  <rect x="540" y="390" width="190" height="350" fill="#6d8a96"/>
+  <rect x="540" y="372" width="190" height="22" fill="#41585f"/>
+  <rect x="556" y="392" width="158" height="10" fill="#d9d3c2"/>
+  <g fill="#33464c">
+    <rect x="564" y="430" width="34" height="44"/><rect x="618" y="430" width="34" height="44"/><rect x="672" y="430" width="34" height="44"/>
+    <rect x="564" y="512" width="34" height="44"/><rect x="618" y="512" width="34" height="44"/><rect x="672" y="512" width="34" height="44"/>
+    <rect x="564" y="594" width="34" height="44"/><rect x="672" y="594" width="34" height="44"/>
+  </g>
+  <rect x="610" y="670" width="54" height="70" fill="#33464c"/>
+  <path d="M540 740h190" stroke="#41585f" stroke-width="10"/>
+</g>
+<g>
+  <rect x="0" y="728" width="800" height="34" fill="#c8a074"/>
+  <rect x="0" y="762" width="800" height="238" fill="#b08a63"/>
+  <g stroke="#96714f" stroke-width="2">
+    <path d="M0 800h800M0 850h800M0 900h800M0 950h800"/>
+  </g>
+</g>
+<g>
+  <rect x="0" y="742" width="800" height="10" fill="#4c3a2c"/>
+  <g fill="#d9c6a6">
+    <rect x="0" y="748" width="800" height="4"/>
+  </g>
+</g>
+<g transform="translate(0 0)">
+  <rect x="170" y="640" width="420" height="150" rx="26" fill="#c9542c"/>
+  <rect x="190" y="660" width="380" height="86" rx="12" fill="#f0d9ae"/>
+  <g fill="#5c3c1c">
+    <rect x="206" y="674" width="58" height="56"/><rect x="280" y="674" width="58" height="56"/><rect x="354" y="674" width="58" height="56"/><rect x="428" y="674" width="58" height="56"/><rect x="502" y="674" width="46" height="56"/>
+  </g>
+  <g fill="#f9f0d8" opacity=".5">
+    <rect x="214" y="682" width="18" height="20"/><rect x="288" y="682" width="18" height="20"/><rect x="362" y="682" width="18" height="20"/>
+  </g>
+  <rect x="336" y="752" width="60" height="8" fill="#4a2c1c"/>
+  <circle cx="240" cy="792" r="22" fill="#2f2620"/><circle cx="240" cy="792" r="9" fill="#7a6a58"/>
+  <circle cx="520" cy="792" r="22" fill="#2f2620"/><circle cx="520" cy="792" r="9" fill="#7a6a58"/>
+  <path d="M150 790h500" stroke="#3a2c22" stroke-width="6"/>
+  <path d="M300 642V618" stroke="#3a2c22" stroke-width="4"/>
+  <path d="M470 642V618" stroke="#3a2c22" stroke-width="4"/>
+</g>
+<g>
+  <rect x="118" y="780" width="8" height="120" fill="#3f4a34"/>
+  <ellipse cx="122" cy="700" rx="44" ry="120" fill="#4f6b3f"/>
+  <ellipse cx="122" cy="700" rx="24" ry="90" fill="#5f7d4b" opacity=".7"/>
+  <rect x="690" y="780" width="8" height="120" fill="#3f4a34"/>
+  <ellipse cx="694" cy="690" rx="48" ry="130" fill="#47603a"/>
+  <ellipse cx="694" cy="690" rx="26" ry="96" fill="#567246" opacity=".7"/>
+</g>
+<g fill="#3a2c22" opacity=".8">
+  <circle cx="330" cy="720" r="12"/><rect x="320" y="732" width="20" height="40" rx="8"/>
+  <circle cx="600" cy="716" r="11"/><rect x="591" y="727" width="18" height="38" rx="7"/>
+</g>
+<rect width="800" height="1000" fill="url(#vig)"/>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".18" style="mix-blend-mode:overlay"/>
+</svg>

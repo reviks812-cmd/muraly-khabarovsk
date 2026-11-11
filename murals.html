@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>Каталог муралов — Муралы Хабаровска</title>
+  <meta name="description" content="Все муралы Хабаровска: фотографии, авторы, годы, адреса и истории создания. Фильтр по районам и поиск.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="murals">
+
+<a class="skip-link" href="#main">К содержанию</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Муралы Хабаровска — на главную">
+      <span class="brand-mark" aria-hidden="true">М</span>
+      <span class="brand-text">Муралы<em>Хабаровск</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a class="nav-link" href="index.html">Главная</a>
+      <a class="nav-link" href="murals.html">Муралы</a>
+      <a class="nav-link" href="history.html">История</a>
+      <a class="nav-link" href="map.html">Карта</a>
+      <a class="nav-link" href="routes.html">Маршруты</a>
+      <a class="nav-link" href="gallery.html">Галерея</a>
+      <div class="nav-extra">
+        <span>Хабаровск · <span data-year></span></span>
+        <span>Street art project</span>
+      </div>
+    </nav>
+    <div class="header-tools">
+      <a class="btn btn-acid btn-small" href="map.html">На карту <span class="arrow">↗</span></a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-head">
+      <div>
+        <span class="page-kicker">Каталог · раздел 01</span>
+        <h1 class="page-title">Все <span class="outline">муралы</span><br><span class="accent">города</span></h1>
+        <p class="page-desc">Восемь стен, восемь историй — от дворовой росписи 2018 года до работы, появившейся прошлым летом. Выбирайте район, ищите по автору или названию и открывайте историю целиком.</p>
+        <div class="page-meta">
+          <span class="pill"><i aria-hidden="true"></i>8 муралов</span>
+          <span class="pill">2018—2026</span>
+          <span class="pill">6 районов</span>
+          <span class="pill">Все истории</span>
+        </div>
+      </div>
+      <div class="page-num" aria-hidden="true">01</div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="catalog-title">
+    <div class="wrap">
+      <h2 class="sr-only" id="catalog-title">Каталог муралов Хабаровска</h2>
+
+      <div class="catalog-bar">
+        <div class="filters" data-filters aria-label="Фильтр по районам"></div>
+        <div class="search-field">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M16.5 16.5L21 21"></path>
+          </svg>
+          <label class="sr-only" for="mural-search">Поиск по муралам</label>
+          <input class="search-input" id="mural-search" type="search" placeholder="Тигр, мост, автор…" autocomplete="off">
+        </div>
+      </div>
+
+      <p class="results-count" data-results>Найдено: <b>8</b> муралов</p>
+
+      <div class="mural-grid catalog-grid" data-catalog></div>
+
+      <div class="empty-state" data-empty hidden>
+        <b>Ничего не найдено</b>
+        Попробуйте выбрать другой район или изменить запрос.
+      </div>
+
+      <noscript>
+        <p class="empty-state">Для просмотра каталога включите JavaScript. Все восемь муралов также описаны на странице «История» и в галерее.</p>
+      </noscript>
+    </div>
+  </section>
+
+  <section class="section section-tight" aria-labelledby="look-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Как смотреть</span>
+          <h2 class="section-title" id="look-title">Четыре правила<br>хорошей прогулки</h2>
+        </div>
+        <p class="section-side">Мурал меняется в зависимости от света, точки обзора и времени года. Вот что стоит иметь в виду, прежде чем идти.</p>
+      </div>
+      <div class="glossary">
+        <article class="gloss">
+          <div class="gloss-num">01</div>
+          <h3>Смотрите издалека</h3>
+          <p>Отойдите на противоположную сторону улицы: композиция мурала рассчитана на дистанцию. Только так видно, как рисунок работает с пропорциями дома.</p>
+        </article>
+        <article class="gloss">
+          <div class="gloss-num">02</div>
+          <h3>Потом подойдите</h3>
+          <p>Вблизи проявляются детали: подписи, скрытые персонажи, фактура краски и следы баллона. У каждого мурала есть слой, который виден только вплотную.</p>
+        </article>
+        <article class="gloss">
+          <div class="gloss-num">03</div>
+          <h3>Выберите свет</h3>
+          <p>Лучшее время — раннее утро или час перед закатом. В полдень яркие цвета выгорают, а зимой низкое солнце подчёркивает рельеф стены.</p>
+        </article>
+        <article class="gloss">
+          <div class="gloss-num">04</div>
+          <h3>Уважайте двор</h3>
+          <p>Почти все муралы находятся на жилых домах. Не заходите на газоны, не шумите и не трогайте стену руками — краска этого не любит.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand-wrap">
+        <h2 class="footer-brand">Муралы<br><em>Хабаровск</em></h2>
+        <p class="footer-tag">Независимый проект о городском стрит-арте: истории, авторы, адреса и маршруты. Смотрите вверх — город отвечает.</p>
+        <div class="footer-socials">
+          <a class="social-pill" href="#">Telegram</a>
+          <a class="social-pill" href="#">VK</a>
+          <a class="social-pill" href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Разделы</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="murals.html">Муралы</a></li>
+          <li><a href="history.html">История</a></li>
+          <li><a href="map.html">Карта</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Проект</h4>
+        <ul class="footer-links">
+          <li><a href="history.html">Хроника</a></li>
+          <li><a href="history.html#glossary">Словарь</a></li>
+          <li><a href="routes.html">Прогулки</a></li>
+          <li><a href="gallery.html">Все работы</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@murali-khv.ru">hello@murali-khv.ru</a></li>
+          <li><a href="#">Хабаровск, Россия</a></li>
+          <li><a href="#">Предложить мурал ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Муралы Хабаровска</span>
+      <span>Сделано с любовью к городу <span class="acid">✦</span></span>
+      <span>Демо-проект · истории и иллюстрации созданы для примера</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно истории -->
+<div class="modal" id="mural-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" type="button" data-modal-close aria-label="Закрыть историю">✕</button>
+    <div class="modal-media">
+      <img id="modal-img" src="img/mural-tiger.svg" alt="Мурал" width="800" height="1000">
+    </div>
+    <div class="modal-body">
+      <div class="modal-kicker" id="modal-kicker"></div>
+      <h2 class="modal-title" id="modal-title">Амурский тигр</h2>
+      <div class="modal-artist" id="modal-artist"></div>
+      <div class="modal-story" id="modal-story"></div>
+      <div class="modal-facts" id="modal-facts"></div>
+      <div class="modal-nav">
+        <button class="modal-nav-btn" type="button" id="modal-prev" data-mural="cranes">← Предыдущий</button>
+        <a class="modal-nav-btn" href="map.html" id="modal-map-link">На карте ↗</a>
+        <button class="modal-nav-btn next" type="button" id="modal-next" data-mural="bridge">Следующий →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

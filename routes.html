@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>Маршруты по муралам — Муралы Хабаровска</title>
+  <meta name="description" content="Четыре маршрута по муралам Хабаровска: центр, набережная и порт, север и большой круг по всем точкам.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="routes">
+
+<a class="skip-link" href="#main">К содержанию</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Муралы Хабаровска — на главную">
+      <span class="brand-mark" aria-hidden="true">М</span>
+      <span class="brand-text">Муралы<em>Хабаровск</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a class="nav-link" href="index.html">Главная</a>
+      <a class="nav-link" href="murals.html">Муралы</a>
+      <a class="nav-link" href="history.html">История</a>
+      <a class="nav-link" href="map.html">Карта</a>
+      <a class="nav-link" href="routes.html">Маршруты</a>
+      <a class="nav-link" href="gallery.html">Галерея</a>
+      <div class="nav-extra">
+        <span>Хабаровск · <span data-year></span></span>
+        <span>Street art project</span>
+      </div>
+    </nav>
+    <div class="header-tools">
+      <a class="btn btn-acid btn-small" href="map.html">На карту <span class="arrow">↗</span></a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-head">
+      <div>
+        <span class="page-kicker">Прогулки · раздел 04</span>
+        <h1 class="page-title">Маршруты<br><span class="outline">по стенам</span></h1>
+        <p class="page-desc">Четыре способа увидеть город: короткая прогулка по центру, большой амурский фасад, северный треугольник и полный круг по всем восьми муралам. С временем, километражем и остановками.</p>
+        <div class="page-meta">
+          <span class="pill"><i aria-hidden="true"></i>4 маршрута</span>
+          <span class="pill">от 1,5 часа</span>
+          <span class="pill">8 муралов</span>
+          <span class="pill">Пешком и на транспорте</span>
+        </div>
+      </div>
+      <div class="page-num" aria-hidden="true">04</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="route-tabs" role="tablist" aria-label="Выбор маршрута">
+        <button class="route-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="route-center" id="tab-center" data-route-target="route-center" tabindex="0"><span>01</span> Красный центр</button>
+        <button class="route-tab" type="button" role="tab" aria-selected="false" aria-controls="route-river" id="tab-river" data-route-target="route-river" tabindex="-1"><span>02</span> Амурский фасад</button>
+        <button class="route-tab" type="button" role="tab" aria-selected="false" aria-controls="route-north" id="tab-north" data-route-target="route-north" tabindex="-1"><span>03</span> Северный треугольник</button>
+        <button class="route-tab" type="button" role="tab" aria-selected="false" aria-controls="route-all" id="tab-all" data-route-target="route-all" tabindex="-1"><span>04</span> Большой круг</button>
+      </div>
+
+      <!-- МАРШРУТ 1 -->
+      <div class="route-panel" id="route-center" role="tabpanel" aria-labelledby="tab-center" tabindex="0">
+        <aside class="route-summary">
+          <span class="eyebrow">Маршрут 01 · Центр</span>
+          <h2>Красный<br>центр</h2>
+          <p>Самый простой и насыщенный маршрут: четыре мурала в пешей доступности друг от друга. Начинается во дворе на Комсомольской и заканчивается у набережной, где удобно встретить закат.</p>
+          <div class="route-stats">
+            <div class="route-stat"><b>4</b><span>точки</span></div>
+            <div class="route-stat"><b>3,2 км</b><span>дистанция</span></div>
+            <div class="route-stat"><b>1,5–2 ч</b><span>время</span></div>
+            <div class="route-stat"><b>Легко</b><span>сложность</span></div>
+          </div>
+          <div class="route-tip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5l3 2"/></svg>
+            <span>Стартуйте после 16:00 — успеете застать мягкий свет на всех четырёх стенах и закат на набережной.</span>
+          </div>
+          <a class="btn btn-ghost btn-block" style="margin-top:14px" href="map.html">Открыть точки на карте <span class="arrow" aria-hidden="true">↗</span></a>
+        </aside>
+
+        <div class="route-stops">
+          <article class="stop">
+            <span class="stop-num">01</span>
+            <div class="stop-body">
+              <h3>Старый город</h3>
+              <div class="stop-artist">Лев Плотников · 2018</div>
+              <p>Начните с мурала, с которого всё началось. Двор, трамвай и тополя — портрет города, которого почти не осталось. Отсюда 6 минут пешком до следующей точки.</p>
+            </div>
+            <a class="stop-link" href="murals.html#city" aria-label="История мурала «Старый город»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">02</span>
+            <div class="stop-body">
+              <h3>Орнамент Амура</h3>
+              <div class="stop-artist">Настя Ходжер · 2020</div>
+              <p>Симметричный узор из рыб, спиралей и масок на Уссурийском бульваре. Подойдите вплотную: линии нанесены кистью, поэтому толщина штриха всё время меняется.</p>
+            </div>
+            <a class="stop-link" href="murals.html#patterns" aria-label="История мурала «Орнамент Амура»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">03</span>
+            <div class="stop-body">
+              <h3>Амурский тигр</h3>
+              <div class="stop-artist">Тимур Ветров · 2021</div>
+              <p>Главная точка маршрута. Тигр смотрит на улицу сквозь тайгу, а у нижней кромки стены спрятаны следы зверя — их видно только вблизи. Здесь же удобно сделать паузу на кофе.</p>
+            </div>
+            <a class="stop-link" href="murals.html#tiger" aria-label="История мурала «Амурский тигр»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">04</span>
+            <div class="stop-body">
+              <h3>Мост</h3>
+              <div class="stop-artist">Аня Соколова · 2019</div>
+              <p>Финал — у набережной. Арки амурского моста уходят за край стены, и на закате роспись начинает светиться. Отсюда рукой подать до воды и смотровой площадки.</p>
+            </div>
+            <a class="stop-link" href="murals.html#bridge" aria-label="История мурала «Мост»">↗</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- МАРШРУТ 2 -->
+      <div class="route-panel" id="route-river" role="tabpanel" aria-labelledby="tab-river" tabindex="0" hidden>
+        <aside class="route-summary">
+          <span class="eyebrow">Маршрут 02 · Река</span>
+          <h2>Амурский<br>фасад</h2>
+          <p>Маршрут вдоль воды и промышленных стен: от моста через порт до южных журавлей. Часть пути лучше проехать на автобусе — расстояния здесь городские, а не прогулочные.</p>
+          <div class="route-stats">
+            <div class="route-stat"><b>4</b><span>точки</span></div>
+            <div class="route-stat"><b>7,4 км</b><span>дистанция</span></div>
+            <div class="route-stat"><b>3–4 ч</b><span>время</span></div>
+            <div class="route-stat"><b>Средне</b><span>сложность</span></div>
+          </div>
+          <div class="route-tip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5l3 2"/></svg>
+            <span>Возьмите с собой воду и заряженный телефон: между портом и Южным мало кафе, а виды стоят долгих остановок.</span>
+          </div>
+          <a class="btn btn-ghost btn-block" style="margin-top:14px" href="map.html">Открыть точки на карте <span class="arrow" aria-hidden="true">↗</span></a>
+        </aside>
+
+        <div class="route-stops">
+          <article class="stop">
+            <span class="stop-num">01</span>
+            <div class="stop-body">
+              <h3>Мост</h3>
+              <div class="stop-artist">Аня Соколова · 2019</div>
+              <p>Старт на набережной: арки, вода и закатный свет. От мурала удобно дойти до причала и посмотреть на Амур с другого ракурса.</p>
+            </div>
+            <a class="stop-link" href="murals.html#bridge" aria-label="История мурала «Мост»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">02</span>
+            <div class="stop-body">
+              <h3>Кета идёт</h3>
+              <div class="stop-artist">Коллектив «Река» · 2022</div>
+              <p>Стена склада в порту, расписанная вместе с портовиками. Найдите рыбу, которая плывёт против течения, — местная игра, в которую играют и дети, и взрослые.</p>
+            </div>
+            <a class="stop-link" href="murals.html#fish" aria-label="История мурала «Кета идёт»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">03</span>
+            <div class="stop-body">
+              <h3>Сдвиг</h3>
+              <div class="stop-artist">Максим Ли · 2024</div>
+              <p>Кислотная абстракция на фасаде бывшего цеха. Днём она работает как пятно света, а в пасмурную погоду — как ориентир. Отсюда стоит доехать до Южного на автобусе.</p>
+            </div>
+            <a class="stop-link" href="murals.html#abstract" aria-label="История мурала «Сдвиг»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">04</span>
+            <div class="stop-body">
+              <h3>Журавли над Амуром</h3>
+              <div class="stop-artist">Ольга Пак · 2025</div>
+              <p>Финал в тумане: две краснокнижные птицы на границе воды и неба. Приходите утром, если хотите увидеть роспись в том свете, для которого она написана.</p>
+            </div>
+            <a class="stop-link" href="murals.html#cranes" aria-label="История мурала «Журавли над Амуром»">↗</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- МАРШРУТ 3 -->
+      <div class="route-panel" id="route-north" role="tabpanel" aria-labelledby="tab-north" tabindex="0" hidden>
+        <aside class="route-summary">
+          <span class="eyebrow">Маршрут 03 · Север</span>
+          <h2>Северный<br>треугольник</h2>
+          <p>Три работы, которые лучше всего смотреть с расстояния: девятнадцать этажей космонавта, геометрия на стене цеха и тигр в центре. Маршрут про масштаб и контрасты.</p>
+          <div class="route-stats">
+            <div class="route-stat"><b>3</b><span>точки</span></div>
+            <div class="route-stat"><b>5,6 км</b><span>дистанция</span></div>
+            <div class="route-stat"><b>2,5 ч</b><span>время</span></div>
+            <div class="route-stat"><b>Средне</b><span>сложность</span></div>
+          </div>
+          <div class="route-tip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5l3 2"/></svg>
+            <span>Начните с севера: утром свет падает на высотный мурал с лучшей стороны, а к центру вы выйдете как раз к обеду.</span>
+          </div>
+          <a class="btn btn-ghost btn-block" style="margin-top:14px" href="map.html">Открыть точки на карте <span class="arrow" aria-hidden="true">↗</span></a>
+        </aside>
+
+        <div class="route-stops">
+          <article class="stop">
+            <span class="stop-num">01</span>
+            <div class="stop-body">
+              <h3>Первый выход</h3>
+              <div class="stop-artist">Илья Космос · 2023</div>
+              <p>Самый высокий мурал города. Отойдите на другую сторону улицы и посмотрите вверх: космонавт висит над крышами, а трос уходит за край стены.</p>
+            </div>
+            <a class="stop-link" href="murals.html#space" aria-label="История мурала «Первый выход»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">02</span>
+            <div class="stop-body">
+              <h3>Сдвиг</h3>
+              <div class="stop-artist">Максим Ли · 2024</div>
+              <p>Гигантская абстракция на индустриальной стене. Сравните её с космонавтом: там — фигура и небо, здесь — чистая геометрия и цвет, который спорит с серым районом.</p>
+            </div>
+            <a class="stop-link" href="murals.html#abstract" aria-label="История мурала «Сдвиг»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">03</span>
+            <div class="stop-body">
+              <h3>Амурский тигр</h3>
+              <div class="stop-artist">Тимур Ветров · 2021</div>
+              <p>Финальная точка — в центре. После промышленных стен тигр воспринимается особенно тепло: это уже не просто роспись, а городской персонаж.</p>
+            </div>
+            <a class="stop-link" href="murals.html#tiger" aria-label="История мурала «Амурский тигр»">↗</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- МАРШРУТ 4 -->
+      <div class="route-panel" id="route-all" role="tabpanel" aria-labelledby="tab-all" tabindex="0" hidden>
+        <aside class="route-summary">
+          <span class="eyebrow">Маршрут 04 · Полный</span>
+          <h2>Большой<br>круг</h2>
+          <p>Все восемь муралов за один день. Маршрут длинный, но логичный: центр — набережная — порт — север — юг. Можно идти пешком, можно сокращать на автобусе.</p>
+          <div class="route-stats">
+            <div class="route-stat"><b>8</b><span>точек</span></div>
+            <div class="route-stat"><b>11 км</b><span>дистанция</span></div>
+            <div class="route-stat"><b>5–6 ч</b><span>время</span></div>
+            <div class="route-stat"><b>Сложно</b><span>сложность</span></div>
+          </div>
+          <div class="route-tip">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5l3 2"/></svg>
+            <span>Не пытайтесь успеть всё до темноты. Выберите 5–6 точек, а остальные оставьте на следующий визит — муралы никуда не денутся.</span>
+          </div>
+          <a class="btn btn-ghost btn-block" style="margin-top:14px" href="map.html">Открыть точки на карте <span class="arrow" aria-hidden="true">↗</span></a>
+        </aside>
+
+        <div class="route-stops">
+          <article class="stop">
+            <span class="stop-num">01</span>
+            <div class="stop-body"><h3>Амурский тигр</h3><div class="stop-artist">Тимур Ветров · 2021</div><p>Старт в центре, на главной улице. Задаёт настроение всему дню.</p></div>
+            <a class="stop-link" href="murals.html#tiger" aria-label="История мурала «Амурский тигр»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">02</span>
+            <div class="stop-body"><h3>Орнамент Амура</h3><div class="stop-artist">Настя Ходжер · 2020</div><p>Пять минут пешком — и вы в другом культурном слое: орнаменты коренных народов Приамурья.</p></div>
+            <a class="stop-link" href="murals.html#patterns" aria-label="История мурала «Орнамент Амура»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">03</span>
+            <div class="stop-body"><h3>Старый город</h3><div class="stop-artist">Лев Плотников · 2018</div><p>Дворовая классика и точка отсчёта всей истории. Здесь хорошо сделать первую паузу.</p></div>
+            <a class="stop-link" href="murals.html#city" aria-label="История мурала «Старый город»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">04</span>
+            <div class="stop-body"><h3>Мост</h3><div class="stop-artist">Аня Соколова · 2019</div><p>Выходите к набережной. Закатные арки и вода — лучший вид маршрута.</p></div>
+            <a class="stop-link" href="murals.html#bridge" aria-label="История мурала «Мост»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">05</span>
+            <div class="stop-body"><h3>Кета идёт</h3><div class="stop-artist">Коллектив «Река» · 2022</div><p>Порт и рабочая история района. Дальше удобнее доехать на автобусе.</p></div>
+            <a class="stop-link" href="murals.html#fish" aria-label="История мурала «Кета идёт»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">06</span>
+            <div class="stop-body"><h3>Сдвиг</h3><div class="stop-artist">Максим Ли · 2024</div><p>Индустриальная абстракция — контраст с фигуративными работами первой половины дня.</p></div>
+            <a class="stop-link" href="murals.html#abstract" aria-label="История мурала «Сдвиг»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">07</span>
+            <div class="stop-body"><h3>Первый выход</h3><div class="stop-artist">Илья Космос · 2023</div><p>Север и девятнадцать этажей. Если силы на исходе — оставьте на финал и смотрите снизу.</p></div>
+            <a class="stop-link" href="murals.html#space" aria-label="История мурала «Первый выход»">↗</a>
+          </article>
+          <article class="stop">
+            <span class="stop-num">08</span>
+            <div class="stop-body"><h3>Журавли над Амуром</h3><div class="stop-artist">Ольга Пак · 2025</div><p>Финал на юге: тишина, вода и птицы. Хорошая точка, чтобы закончить день и выдохнуть.</p></div>
+            <a class="stop-link" href="murals.html#cranes" aria-label="История мурала «Журавли над Амуром»">↗</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" aria-labelledby="practice-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Практика</span>
+          <h2 class="section-title" id="practice-title">Что взять<br>с собой</h2>
+        </div>
+        <p class="section-side">Муралы — часть города, а не музей. Поэтому прогулка требует чуть больше внимания к деталям, чем обычная.</p>
+      </div>
+      <div class="glossary">
+        <article class="gloss">
+          <div class="gloss-num">01</div>
+          <h3>Удобная обувь</h3>
+          <p>Маршруты проходят через дворы, промзоны и набережную. Асфальт местами неровный, а после дождя лучше иметь нескользящую подошву.</p>
+        </article>
+        <article class="gloss">
+          <div class="gloss-num">02</div>
+          <h3>Камера или телефон</h3>
+          <p>Утром и перед закатом цвет муралов меняется. Снимайте с противоположной стороны улицы: так в кадр попадёт вся композиция.</p>
+        </article>
+        <article class="gloss">
+          <div class="gloss-num">03</div>
+          <h3>Вода и перекус</h3>
+          <p>Между портом и Южным мало кафе. На длинном маршруте лучше взять воду с собой и не рассчитывать на спонтанную остановку.</p>
+        </article>
+        <article class="gloss">
+          <div class="gloss-num">04</div>
+          <h3>Уважение к двору</h3>
+          <p>Муралы находятся на жилых домах. Не заходите на газоны, не шумите и не трогайте стену руками — краска этого не любит.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="manifest" data-reveal>
+        <span class="manifest-bg" aria-hidden="true">ПОЙДЁМ</span>
+        <span class="eyebrow">Следующий шаг</span>
+        <h2 class="manifest-title">Выберите точку —<br><em>остальное город покажет</em></h2>
+        <p class="manifest-sub">Каждый маршрут можно менять под себя. Главное — смотреть не только под ноги, но и вверх.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;position:relative;z-index:1">
+          <a class="btn btn-acid" href="map.html">Открыть карту <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="gallery.html">Галерея работ <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand-wrap">
+        <h2 class="footer-brand">Муралы<br><em>Хабаровск</em></h2>
+        <p class="footer-tag">Независимый проект о городском стрит-арте: истории, авторы, адреса и маршруты. Смотрите вверх — город отвечает.</p>
+        <div class="footer-socials">
+          <a class="social-pill" href="#">Telegram</a>
+          <a class="social-pill" href="#">VK</a>
+          <a class="social-pill" href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Разделы</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="murals.html">Муралы</a></li>
+          <li><a href="history.html">История</a></li>
+          <li><a href="map.html">Карта</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Проект</h4>
+        <ul class="footer-links">
+          <li><a href="history.html">Хроника</a></li>
+          <li><a href="history.html#glossary">Словарь</a></li>
+          <li><a href="routes.html">Прогулки</a></li>
+          <li><a href="gallery.html">Все работы</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@murali-khv.ru">hello@murali-khv.ru</a></li>
+          <li><a href="#">Хабаровск, Россия</a></li>
+          <li><a href="#">Предложить мурал ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Муралы Хабаровска</span>
+      <span>Сделано с любовью к городу <span class="acid">✦</span></span>
+      <span>Демо-проект · истории и иллюстрации созданы для примера</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

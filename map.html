@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>Карта муралов — Муралы Хабаровска</title>
+  <meta name="description" content="Интерактивная карта муралов Хабаровска: адреса, районы, авторы и годы. Выберите точку и читайте историю.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="map">
+
+<a class="skip-link" href="#main">К содержанию</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html" aria-label="Муралы Хабаровска — на главную">
+      <span class="brand-mark" aria-hidden="true">М</span>
+      <span class="brand-text">Муралы<em>Хабаровск</em></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a class="nav-link" href="index.html">Главная</a>
+      <a class="nav-link" href="murals.html">Муралы</a>
+      <a class="nav-link" href="history.html">История</a>
+      <a class="nav-link" href="map.html">Карта</a>
+      <a class="nav-link" href="routes.html">Маршруты</a>
+      <a class="nav-link" href="gallery.html">Галерея</a>
+      <div class="nav-extra">
+        <span>Хабаровск · <span data-year></span></span>
+        <span>Street art project</span>
+      </div>
+    </nav>
+    <div class="header-tools">
+      <a class="btn btn-acid btn-small" href="#map">К схеме <span class="arrow">↓</span></a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap page-head">
+      <div>
+        <span class="page-kicker">Навигация · раздел 03</span>
+        <h1 class="page-title">Карта<br><span class="outline">муралов</span></h1>
+        <p class="page-desc">Схема города с восемью отмеченными точками. Нажмите на номер, чтобы увидеть работу, адрес и короткую историю. Точки стоят условно — для прогулки используйте адрес.</p>
+        <div class="page-meta">
+          <span class="pill"><i aria-hidden="true"></i>8 точек</span>
+          <span class="pill">Центр · Север · Порт · Юг</span>
+          <span class="pill">Кликните по номеру</span>
+        </div>
+      </div>
+      <div class="page-num" aria-hidden="true">03</div>
+    </div>
+  </section>
+
+  <section class="section" id="map">
+    <div class="wrap">
+      <div class="map-layout">
+        <div class="map-canvas" aria-label="Схема Хабаровска с точками муралов">
+          <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Стилизованная схема города">
+            <defs>
+              <linearGradient id="mapBg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#0d1517"/>
+                <stop offset="1" stop-color="#101d1f"/>
+              </linearGradient>
+              <linearGradient id="river" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#143a42"/>
+                <stop offset="1" stop-color="#0a232a"/>
+              </linearGradient>
+              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M40 0H0V40" fill="none" stroke="#1b292b" stroke-width="1"/>
+              </pattern>
+              <pattern id="gridSmall" width="10" height="10" patternUnits="userSpaceOnUse">
+                <path d="M10 0H0V10" fill="none" stroke="#182426" stroke-width="0.5"/>
+              </pattern>
+            </defs>
+
+            <rect width="800" height="600" fill="url(#mapBg)"/>
+            <rect width="800" height="600" fill="url(#gridSmall)"/>
+            <rect width="800" height="600" fill="url(#grid)" opacity="0.55"/>
+
+            <!-- кварталы -->
+            <g fill="#141f21" stroke="#223033" stroke-width="1">
+              <rect x="56" y="86" width="112" height="62" rx="3"/>
+              <rect x="182" y="86" width="76" height="62" rx="3"/>
+              <rect x="272" y="96" width="98" height="52" rx="3"/>
+              <rect x="56" y="170" width="90" height="54" rx="3"/>
+              <rect x="160" y="170" width="126" height="54" rx="3"/>
+              <rect x="300" y="170" width="80" height="54" rx="3"/>
+              <rect x="56" y="256" width="118" height="72" rx="3"/>
+              <rect x="188" y="256" width="86" height="72" rx="3"/>
+              <rect x="288" y="256" width="110" height="72" rx="3"/>
+              <rect x="56" y="362" width="96" height="66" rx="3"/>
+              <rect x="166" y="362" width="140" height="66" rx="3"/>
+              <rect x="320" y="362" width="90" height="66" rx="3"/>
+              <rect x="56" y="456" width="120" height="70" rx="3"/>
+              <rect x="190" y="456" width="100" height="70" rx="3"/>
+              <rect x="304" y="456" width="120" height="70" rx="3"/>
+              <rect x="392" y="86" width="96" height="62" rx="3"/>
+              <rect x="430" y="170" width="82" height="54" rx="3"/>
+              <rect x="430" y="256" width="82" height="72" rx="3"/>
+              <rect x="430" y="362" width="74" height="66" rx="3"/>
+            </g>
+
+            <!-- парк -->
+            <g fill="#17251d" stroke="#25392b" stroke-width="1">
+              <path d="M352 190l44-14 34 26-10 40-48 10-28-24Z"/>
+              <path d="M140 448l30-8 22 20-8 30-32 6-20-18Z"/>
+            </g>
+
+            <!-- улицы -->
+            <g fill="none" stroke-linecap="round">
+              <path d="M30 526L470 110" stroke="#2a3d40" stroke-width="12"/>
+              <path d="M118 556L540 150" stroke="#223436" stroke-width="7"/>
+              <path d="M44 402L520 402" stroke="#2a3d40" stroke-width="10"/>
+              <path d="M236 58L300 540" stroke="#223436" stroke-width="8"/>
+              <path d="M424 70L424 520" stroke="#1e2e31" stroke-width="6"/>
+              <path d="M44 236L474 236" stroke="#1e2e31" stroke-width="6"/>
+              <path d="M44 138L470 138" stroke="#1e2e31" stroke-width="4"/>
+              <path d="M44 326L470 326" stroke="#1e2e31" stroke-width="4"/>
+              <path d="M44 470L470 470" stroke="#1e2e31" stroke-width="4"/>
+              <path d="M118 58L118 540" stroke="#1a292b" stroke-width="3"/>
+              <path d="M330 58L330 540" stroke="#1a292b" stroke-width="3"/>
+            </g>
+
+            <!-- река -->
+            <path d="M800 250C700 270 660 320 620 380 570 452 500 492 400 520 320 544 220 580 160 600H800Z" fill="url(#river)"/>
+            <path d="M800 250C700 270 660 320 620 380 570 452 500 492 400 520" fill="none" stroke="#2d676d" stroke-width="2" opacity="0.7"/>
+            <path d="M800 300C714 316 678 360 640 414 594 478 524 516 432 542" fill="none" stroke="#2d676d" stroke-width="1" opacity="0.35"/>
+
+            <!-- мост -->
+            <g stroke="#3a5c60" fill="none">
+              <path d="M520 392H800" stroke-width="9"/>
+              <path d="M560 392Q610 350 660 392" stroke-width="3"/>
+              <path d="M660 392Q710 350 760 392" stroke-width="3"/>
+              <path d="M600 392V372M640 392V360M700 392V360M740 392V372" stroke-width="2"/>
+            </g>
+
+            <!-- подписи -->
+            <g font-family="Manrope, sans-serif" font-size="9" letter-spacing="2" fill="#5f7377" opacity="0.85">
+              <text x="250" y="128">СЕВЕРНЫЙ</text>
+              <text x="214" y="300" fill="#7f969a">ЦЕНТР</text>
+              <text x="520" y="200">ИНДУСТРИАЛЬНЫЙ</text>
+              <text x="540" y="500">ПОРТ</text>
+              <text x="250" y="560">ЮЖНЫЙ</text>
+              <text x="150" y="52" fill="#43565a" font-size="8">ТИХООКЕАНСКАЯ</text>
+              <text x="44" y="392" fill="#43565a" font-size="7.5">УССУРИЙСКИЙ БУЛЬВАР</text>
+              <text x="500" y="432" fill="#43565a" font-size="7.5">НАБЕРЕЖНАЯ</text>
+              <text x="608" y="300" fill="#3d777e" font-size="13" letter-spacing="6" transform="rotate(16 608 300)">АМУР</text>
+            </g>
+
+            <!-- компас -->
+            <g transform="translate(738 92)" opacity="0.55">
+              <circle r="20" fill="none" stroke="#44595d" stroke-width="1"/>
+              <path d="M0 -14L5 5 0 0 -5 5Z" fill="#d7ff3f"/>
+              <text x="0" y="-26" text-anchor="middle" font-family="Manrope, sans-serif" font-size="8" fill="#7f969a" letter-spacing="2">С</text>
+            </g>
+          </svg>
+
+          <div id="map-points"></div>
+
+          <span class="map-label" style="left:36%;top:11%">Северный</span>
+          <span class="map-label" style="left:29%;top:48%">Центр</span>
+          <span class="map-label" style="left:64%;top:74%">Порт</span>
+          <span class="map-label" style="left:30%;top:88%">Южный</span>
+
+          <div class="map-legend">
+            <span class="legend-item"><i aria-hidden="true"></i>Мурал</span>
+            <span class="legend-item"><i aria-hidden="true"></i>Выбрано</span>
+            <span class="legend-item"><i aria-hidden="true"></i>Амур</span>
+          </div>
+        </div>
+
+        <aside class="map-sidebar" aria-live="polite">
+          <div class="map-card">
+            <img id="map-img" src="img/mural-tiger.svg" alt="Мурал «Амурский тигр»" width="800" height="1000">
+            <span class="map-card-badge" id="map-badge">Точка 01</span>
+          </div>
+          <div class="map-info">
+            <span class="eyebrow" id="map-kicker">2021 · Центр</span>
+            <h3 id="map-title">Амурский тигр</h3>
+            <div class="artist" id="map-artist">Тимур Ветров</div>
+            <p id="map-short">Оранжевый хищник смотрит на город сквозь таёжный лес — самый узнаваемый мурал Хабаровска.</p>
+            <div class="map-address">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/>
+                <circle cx="12" cy="10" r="2.5"/>
+              </svg>
+              <span id="map-address">ул. Муравьёва-Амурского, 15</span>
+            </div>
+            <div class="map-facts" id="map-facts">
+              <span>18 × 12 м</span><span class="sep"></span><span>Акрил, аэрозоль</span>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <button class="btn btn-acid btn-small" type="button" id="map-modal-btn" data-mural="tiger">Читать историю <span class="arrow">↗</span></button>
+              <a class="btn btn-ghost btn-small" href="murals.html">Каталог</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" aria-labelledby="points-title">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Все точки</span>
+          <h2 class="section-title" id="points-title">Список<br>локаций</h2>
+        </div>
+        <p class="section-side">Восемь адресов в четырёх районах. Нажмите на любую строку — точка на схеме подсветится, а карточка справа обновится.</p>
+      </div>
+      <div class="map-list" id="map-list"></div>
+
+      <div class="glossary" style="margin-top:38px">
+        <article class="gloss">
+          <div class="gloss-num">01</div>
+          <h3>Точки условны</h3>
+          <p>Схема показывает расположение муралов относительно районов и реки, но не является точной навигацией. Для прогулки открывайте адрес в картах.</p>
+        </article>
+        <article class="gloss">
+          <div class="gloss-num">02</div>
+          <h3>Лучший порядок</h3>
+          <p>Начинайте с центра: четыре точки находятся в пешей доступности друг от друга. Север и порт удобнее смотреть отдельными маршрутами.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="manifest" data-reveal>
+        <span class="manifest-bg" aria-hidden="true">ПУТЬ</span>
+        <span class="eyebrow">Готовый план</span>
+        <h2 class="manifest-title">Не хотите<br>выбирать? <em>Есть маршруты</em></h2>
+        <p class="manifest-sub">Три продуманных прогулки — с точками, временем и остановками. От двух часов до половины дня.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;position:relative;z-index:1">
+          <a class="btn btn-acid" href="routes.html">Выбрать маршрут <span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="btn btn-ghost" href="gallery.html">Смотреть галерею <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand-wrap">
+        <h2 class="footer-brand">Муралы<br><em>Хабаровск</em></h2>
+        <p class="footer-tag">Независимый проект о городском стрит-арте: истории, авторы, адреса и маршруты. Смотрите вверх — город отвечает.</p>
+        <div class="footer-socials">
+          <a class="social-pill" href="#">Telegram</a>
+          <a class="social-pill" href="#">VK</a>
+          <a class="social-pill" href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Разделы</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="murals.html">Муралы</a></li>
+          <li><a href="history.html">История</a></li>
+          <li><a href="map.html">Карта</a></li>
+          <li><a href="routes.html">Маршруты</a></li>
+          <li><a href="gallery.html">Галерея</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Проект</h4>
+        <ul class="footer-links">
+          <li><a href="history.html">Хроника</a></li>
+          <li><a href="history.html#glossary">Словарь</a></li>
+          <li><a href="routes.html">Прогулки</a></li>
+          <li><a href="gallery.html">Все работы</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакты</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@murali-khv.ru">hello@murali-khv.ru</a></li>
+          <li><a href="#">Хабаровск, Россия</a></li>
+          <li><a href="#">Предложить мурал ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Муралы Хабаровска</span>
+      <span>Сделано с любовью к городу <span class="acid">✦</span></span>
+      <span>Демо-проект · истории и иллюстрации созданы для примера</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Модальное окно истории -->
+<div class="modal" id="mural-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-backdrop" data-modal-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" type="button" data-modal-close aria-label="Закрыть историю">✕</button>
+    <div class="modal-media">
+      <img id="modal-img" src="img/mural-tiger.svg" alt="Мурал" width="800" height="1000">
+    </div>
+    <div class="modal-body">
+      <div class="modal-kicker" id="modal-kicker"></div>
+      <h2 class="modal-title" id="modal-title">Амурский тигр</h2>
+      <div class="modal-artist" id="modal-artist"></div>
+      <div class="modal-story" id="modal-story"></div>
+      <div class="modal-facts" id="modal-facts"></div>
+      <div class="modal-nav">
+        <button class="modal-nav-btn" type="button" id="modal-prev" data-mural="cranes">← Предыдущий</button>
+        <a class="modal-nav-btn" href="map.html" id="modal-map-link">На карте ↗</a>
+        <button class="modal-nav-btn next" type="button" id="modal-next" data-mural="bridge">Следующий →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
