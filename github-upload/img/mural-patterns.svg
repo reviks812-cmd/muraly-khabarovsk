@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">Мурал «Орнамент Амура»</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#a8472d"/>
+    <stop offset=".55" stop-color="#943a26"/>
+    <stop offset="1" stop-color="#6f2a1d"/>
+  </linearGradient>
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <radialGradient id="vig" cx=".5" cy=".45" r=".78">
+    <stop offset=".5" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".5"/>
+  </radialGradient>
+  <g id="half">
+    <path d="M400 120c-70 0-118 52-118 112 0 48 26 88 68 104-30 16-48 44-48 78 0 52 44 90 98 90 32 0 58-12 78-30v-90c-14 10-32 16-52 16-30 0-50-18-50-42 0-24 20-38 50-38 18 0 36 6 52 16v-92c-22-8-40-24-46-44 18 14 42 22 66 22V120Z" fill="#efdcb8" opacity=".18"/>
+    <path d="M150 250c0-40 30-70 70-70 26 0 48 14 60 36-16-4-32-2-44 6-20 12-24 38-10 54 10 12 28 16 42 8-8 20-28 34-52 34-38 0-66-30-66-68Z" fill="#e9d6b0"/>
+    <circle cx="196" cy="250" r="10" fill="#a8472d"/>
+    <path d="M150 470c22 0 40 18 40 40s-18 40-40 40-40-18-40-40c0-8 2-14 6-20 4 8 12 14 22 14 14 0 24-12 24-26 0-4-2-8-4-10 4 0 8 2 12 2Z" fill="#2f6b58"/>
+    <path d="M118 560c0 30 24 54 54 54h58v-22h-54c-18 0-32-14-32-32s14-32 32-32h54v-22h-58c-30 0-54 24-54 54Z" fill="#efdcb8"/>
+    <path d="M118 700c0 34 26 60 60 60h44v-24h-40c-20 0-36-16-36-36s16-36 36-36h40v-24h-44c-34 0-60 26-60 60Z" fill="#2f6b58"/>
+    <path d="M250 850c-12-24-38-38-66-38-16 0-32 4-44 12v-24c14-6 28-10 44-10 40 0 74 20 90 50l-24 10Z" fill="#efdcb8"/>
+    <path d="M330 880c-20-40-52-64-94-70v24c30 6 54 24 68 50l26-4Z" fill="#e9d6b0"/>
+    <circle cx="286" cy="566" r="14" fill="#efdcb8"/>
+    <circle cx="286" cy="566" r="6" fill="#a8472d"/>
+    <circle cx="256" cy="716" r="10" fill="#efdcb8"/>
+    <path d="M180 380l16 28 32 6-24 22 6 32-30-16-30 16 6-32-24-22 32-6Z" fill="#e9d6b0" opacity=".9"/>
+    <path d="M236 420l8 14 16 3-12 11 3 16-15-8-15 8 3-16-12-11 16-3Z" fill="#2f6b58"/>
+  </g>
+  <clipPath id="frame"><rect x="60" y="70" width="680" height="860" rx="8"/></clipPath>
+</defs>
+<rect width="800" height="1000" fill="url(#bg)"/>
+<rect x="60" y="70" width="680" height="860" fill="#7c2f20" opacity=".4"/>
+<g clip-path="url(#frame)">
+  <g fill="#e9d6b0" opacity=".12">
+    <path d="M60 70h680v40H60z"/><path d="M60 890h680v40H60z"/>
+  </g>
+  <g stroke="#efdcb8" stroke-width="2" opacity=".35" fill="none">
+    <rect x="86" y="96" width="628" height="808"/>
+    <rect x="104" y="114" width="592" height="772"/>
+  </g>
+  <g>
+    <use href="#half"/>
+    <use href="#half" transform="translate(800 0) scale(-1 1)"/>
+  </g>
+  <g transform="translate(0 0)">
+    <circle cx="400" cy="420" r="132" fill="none" stroke="#efdcb8" stroke-width="4"/>
+    <circle cx="400" cy="420" r="118" fill="none" stroke="#efdcb8" stroke-width="1.5" opacity=".6"/>
+    <path d="M400 318c-56 0-100 44-100 100 0 44 28 80 68 94v-34c-24-12-40-36-40-64 0-40 32-72 72-72s72 32 72 72c0 28-16 52-40 64v34c40-14 68-50 68-94 0-56-44-100-100-100Z" fill="#efdcb8"/>
+    <circle cx="366" cy="410" r="12" fill="#7c2f20"/>
+    <circle cx="434" cy="410" r="12" fill="#7c2f20"/>
+    <path d="M400 430v26" stroke="#7c2f20" stroke-width="6" stroke-linecap="round"/>
+    <path d="M400 456c-14 12-30 14-40 6 10 18 30 22 40 10 10 12 30 8 40-10-10 8-26 6-40-6Z" fill="#7c2f20"/>
+    <path d="M344 480c-8 18-22 30-40 36M456 480c8 18 22 30 40 36" stroke="#2f6b58" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </g>
+  <g fill="#efdcb8">
+    <circle cx="400" cy="150" r="10"/><circle cx="400" cy="826" r="10"/>
+    <circle cx="150" cy="460" r="6"/><circle cx="650" cy="460" r="6"/>
+  </g>
+  <g stroke="#efdcb8" stroke-width="3" opacity=".8">
+    <path d="M360 610c20 14 60 14 80 0M360 640c20 14 60 14 80 0M370 670c16 10 44 10 60 0" fill="none"/>
+  </g>
+  <g fill="#2f6b58">
+    <path d="M340 760l20 34h-40Z"/><path d="M400 760l20 34h-40Z"/><path d="M460 760l20 34h-40Z"/>
+  </g>
+  <g fill="#e9d6b0" opacity=".8">
+    <circle cx="120" cy="180" r="4"/><circle cx="140" cy="200" r="3"/><circle cx="120" cy="220" r="5"/>
+    <circle cx="680" cy="180" r="4"/><circle cx="660" cy="200" r="3"/><circle cx="680" cy="220" r="5"/>
+  </g>
+</g>
+<rect width="800" height="1000" fill="url(#vig)"/>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".2" style="mix-blend-mode:overlay"/>
+</svg>

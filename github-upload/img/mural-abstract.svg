@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">Мурал «Сдвиг»</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d7ff3f"/>
+    <stop offset="1" stop-color="#b8e82b"/>
+  </linearGradient>
+  <linearGradient id="circle" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#2f63e8"/>
+    <stop offset="1" stop-color="#173a9c"/>
+  </linearGradient>
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <radialGradient id="vig" cx=".5" cy=".45" r=".8">
+    <stop offset=".55" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".38"/>
+  </radialGradient>
+</defs>
+<rect width="800" height="1000" fill="url(#bg)"/>
+<path d="M-50 760L850 260V520L-50 1000Z" fill="#ff5a2b"/>
+<path d="M-50 900L850 400V470L-50 970Z" fill="#0d2b2b"/>
+<circle cx="530" cy="400" r="235" fill="url(#circle)"/>
+<circle cx="530" cy="400" r="150" fill="#0d2b2b"/>
+<circle cx="530" cy="400" r="62" fill="#d7ff3f"/>
+<path d="M120 150h260v260H120Z" fill="#f7f0dc" opacity=".92"/>
+<path d="M380 150L120 410" stroke="#0d2b2b" stroke-width="14"/>
+<path d="M120 150L380 410" stroke="#ff5a2b" stroke-width="14"/>
+<circle cx="120" cy="150" r="22" fill="#0d2b2b"/>
+<circle cx="380" cy="150" r="22" fill="#ff5a2b"/>
+<circle cx="120" cy="410" r="22" fill="#f7f0dc"/>
+<circle cx="380" cy="410" r="22" fill="#0d2b2b"/>
+<g stroke="#0d2b2b" stroke-width="5" opacity=".85" fill="none">
+  <path d="M80 560c120-90 280-120 440-70"/>
+  <path d="M80 610c120-90 280-120 440-70"/>
+  <path d="M80 660c120-90 280-120 440-70"/>
+</g>
+<g fill="#f7f0dc">
+  <circle cx="660" cy="120" r="10"/><circle cx="700" cy="160" r="6"/><circle cx="620" cy="170" r="5"/>
+  <circle cx="80" cy="840" r="8"/><circle cx="120" cy="880" r="5"/>
+</g>
+<g fill="#0d2b2b">
+  <path d="M560 720h180v180H560Z" opacity=".9"/>
+  <path d="M620 760h120v120H620Z" fill="#d7ff3f"/>
+</g>
+<g stroke="#f7f0dc" stroke-width="2" opacity=".5">
+  <path d="M80 80v40M60 100h40"/><path d="M720 880v40M700 900h40"/>
+</g>
+<rect width="800" height="1000" fill="url(#vig)"/>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".16" style="mix-blend-mode:overlay"/>
+</svg>

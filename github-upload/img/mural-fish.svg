@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="t">
+<title id="t">Мурал «Кета идёт»</title>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#083246"/>
+    <stop offset=".55" stop-color="#072434"/>
+    <stop offset="1" stop-color="#04141f"/>
+  </linearGradient>
+  <linearGradient id="fish1" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ff9a4d"/>
+    <stop offset=".55" stop-color="#f2662c"/>
+    <stop offset="1" stop-color="#c93f1c"/>
+  </linearGradient>
+  <linearGradient id="fish2" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffc46b"/>
+    <stop offset=".6" stop-color="#f08a3c"/>
+    <stop offset="1" stop-color="#c95426"/>
+  </linearGradient>
+  <filter id="grain">
+    <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="3" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <radialGradient id="vig" cx=".5" cy=".45" r=".8">
+    <stop offset=".5" stop-color="#000" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".55"/>
+  </radialGradient>
+  <clipPath id="fishClip1">
+    <path d="M190 470C250 390 380 370 470 430 520 464 548 516 560 560 480 560 380 552 300 520 240 496 208 484 190 470Z"/>
+  </clipPath>
+  <clipPath id="fishClip2">
+    <path d="M560 700C500 630 380 620 300 680 250 716 224 764 214 806 290 802 386 786 460 750 518 722 546 712 560 700Z"/>
+  </clipPath>
+</defs>
+<rect width="800" height="1000" fill="url(#bg)"/>
+<g opacity=".1" fill="#bff4e8">
+  <path d="M0 0L300 0 120 560Z"/><path d="M800 120L800 0 500 0Z"/><path d="M0 620L220 1000 0 1000Z"/>
+</g>
+<g fill="none" stroke="#2f9c9a" stroke-width="5" opacity=".38">
+  <path d="M-60 780q160-120 320 0 160 120 320 0 160-120 320 0"/>
+  <path d="M-60 850q160-120 320 0 160 120 320 0 160-120 320 0"/>
+  <path d="M-60 920q160-120 320 0 160 120 320 0 160-120 320 0"/>
+  <path d="M-60 990q160-120 320 0 160 120 320 0 160-120 320 0"/>
+</g>
+<g fill="#bff4e8" opacity=".5">
+  <circle cx="120" cy="230" r="5"/><circle cx="150" cy="280" r="3"/><circle cx="110" cy="320" r="7"/>
+  <circle cx="690" cy="230" r="4"/><circle cx="660" cy="300" r="6"/><circle cx="700" cy="360" r="3"/>
+  <circle cx="350" cy="180" r="3"/><circle cx="430" cy="140" r="4"/><circle cx="250" cy="120" r="5"/>
+</g>
+<g>
+  <path d="M560 560C600 530 660 520 700 540 668 566 668 596 700 622 650 630 600 604 560 560Z" fill="#d95022"/>
+  <path d="M190 470C150 430 100 420 60 440 90 470 92 500 64 528 112 536 160 512 190 470Z" fill="#d95022" opacity=".9"/>
+  <path d="M190 470C250 390 380 370 470 430 520 464 548 516 560 560 480 560 380 552 300 520 240 496 208 484 190 470Z" fill="url(#fish1)"/>
+  <g clip-path="url(#fishClip1)">
+    <path d="M250 400C300 470 320 540 330 600" stroke="#072434" stroke-width="16" fill="none" opacity=".8"/>
+    <path d="M340 380C380 450 400 520 405 580" stroke="#072434" stroke-width="12" fill="none" opacity=".7"/>
+    <path d="M430 390C460 450 475 505 480 560" stroke="#072434" stroke-width="10" fill="none" opacity=".7"/>
+    <circle cx="330" cy="470" r="6" fill="#ffe8b0"/><circle cx="300" cy="500" r="4" fill="#ffe8b0"/>
+    <circle cx="380" cy="500" r="5" fill="#072434" opacity=".5"/><circle cx="420" cy="520" r="4" fill="#072434" opacity=".5"/>
+    <path d="M260 520C330 545 420 552 500 545" stroke="#ffd08a" stroke-width="8" opacity=".6" fill="none"/>
+  </g>
+  <circle cx="485" cy="455" r="13" fill="#08202e"/>
+  <circle cx="489" cy="451" r="4" fill="#eaffff"/>
+  <path d="M470 500q24 14 50 2" stroke="#08202e" stroke-width="5" fill="none" opacity=".6"/>
+</g>
+<g>
+  <path d="M214 806C180 842 140 856 104 846 126 818 128 792 108 766 150 762 190 780 214 806Z" fill="#d95022" opacity=".9"/>
+  <path d="M560 700C500 630 380 620 300 680 250 716 224 764 214 806 290 802 386 786 460 750 518 722 546 712 560 700Z" fill="url(#fish2)"/>
+  <g clip-path="url(#fishClip2)">
+    <path d="M300 650C330 710 340 760 340 820" stroke="#072434" stroke-width="13" fill="none" opacity=".7"/>
+    <path d="M380 640C400 700 410 750 410 790" stroke="#072434" stroke-width="10" fill="none" opacity=".65"/>
+    <path d="M450 670C465 710 470 740 470 770" stroke="#072434" stroke-width="8" fill="none" opacity=".6"/>
+    <path d="M260 780C330 800 420 790 500 760" stroke="#ffd08a" stroke-width="7" opacity=".55" fill="none"/>
+  </g>
+  <circle cx="265" cy="720" r="11" fill="#08202e"/>
+  <circle cx="268" cy="717" r="3.5" fill="#eaffff"/>
+</g>
+<g fill="none" stroke="#f6a15c" stroke-width="3" opacity=".5">
+  <path d="M600 840q40-20 80 0 40 20 80 0"/>
+  <path d="M80 880q30-16 60 0 30 16 60 0"/>
+</g>
+<rect width="800" height="1000" fill="url(#vig)"/>
+<rect width="800" height="1000" filter="url(#grain)" opacity=".17" style="mix-blend-mode:overlay"/>
+</svg>
